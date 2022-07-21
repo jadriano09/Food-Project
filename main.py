@@ -31,6 +31,7 @@ while True:
                 list_of_foods.remove('')
 
         print("You're gonna eat", random.choice(list_of_foods)+"! Enjoy!")
+        break
 
     elif choice == "home":
         print("Great choice! Here's how this will work: ")
@@ -100,10 +101,13 @@ while True:
 
         if recipe1_points > recipe2_points and recipe1_points > recipe3_points:
             print("You're gonna make " + dict1['Name']+"! Enjoy!")
+            break
         if recipe2_points > recipe1_points and recipe2_points > recipe3_points:
             print("You're gonna make " + dict2['Name']+"! Enjoy!")
+            break
         if recipe3_points > recipe1_points and recipe3_points > recipe2_points:
             print("You're gonna make " + dict3['Name']+"! Enjoy!")
+            break
 
     else:
         print("INVALID RESPONSE. PLEASE TRY AGAIN ")
